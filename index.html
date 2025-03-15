@@ -51,6 +51,74 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <!--Mobile menu-->
+      <div class="mobile-menu" data-menu>
+        <div class="container">
+          <button class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+              <li><a class="mobile-nav-link" href="#">Studio</a></li>
+              <li><a class="mobile-nav-link" href="#">Portfolio</a></li>
+              <li><a class="mobile-nav-link" href="#">Contacts</a></li>
+            </ul>
+          </nav>
+          <adress class="mobile-adress"
+            ><ul class="mobile-adress-list">
+              <li>
+                <a class="mobile-adress-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mobile-adress-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </adress>
+          <div>
+            <ul class="mobile-socials-list">
+              <li class="item">
+                <a href="" class="mobile-socials-link">
+                  <svg width="24" height="24" class="mobile-socials-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="mobile-socials-link">
+                  <svg width="24" height="24" class="mobile-socials-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="mobile-socials-link">
+                  <svg width="24" height="24" class="mobile-socials-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="mobile-socials-link">
+                  <svg width="24" height="24" class="mobile-socials-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!--Main section-->
@@ -125,11 +193,32 @@
           <h2 class="title">Our Team</h2>
           <ul class="team-list">
             <li class="empl-box">
-              <img
-                src="./images/img-mark.jpg"
-                width="264"
-                alt="Mark Guerrero - Product Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-mark-mobile.jpg,
+                    ./images/img-mark-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-mark-tablet.jpg,
+                    ./images/img-mark-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1157px)"
+                />
+                <source
+                  srcset="./images/img-mark.jpg, ./images/img-mark@2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+
+                <img
+                  src="./images/img-mark.jpg"
+                  width="264"
+                  alt="Mark Guerrero - Product Designer"
+                />
+              </picture>
               <div class="empl-card">
                 <h3 class="head">Mark Guerrero</h3>
                 <p class="text">Product Designer</p>
@@ -166,11 +255,31 @@
               </div>
             </li>
             <li class="empl-box">
-              <img
-                src="./images/img-tom.jpg"
-                width="264"
-                alt="Tom Ford - Frontend Developer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-tom-mobile.jpg,
+                    ./images/img-tom-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-tom-tablet.jpg,
+                    ./images/img-tom-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1157px)"
+                />
+                <source
+                  srcset="./images/img-tom.jpg, ./images/img-tom@2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <img
+                  src="./images/img-tom.jpg"
+                  width="264"
+                  alt="Tom Ford - Frontend Developer"
+                />
+              </picture>
               <div class="empl-card">
                 <h3 class="head">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
@@ -207,11 +316,34 @@
               </div>
             </li>
             <li class="empl-box">
-              <img
-                src="./images/img-camila.jpg"
-                width="264"
-                alt="Camila Garcia - Marketing"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-camila-mobile.jpg,
+                    ./images/img-camila-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-camila-tablet.jpg,
+                    ./images/img-camila-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1157px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-camila.jpg,
+                    ./images/img-camila@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <img
+                  src="./images/img-camila.jpg"
+                  width="264"
+                  alt="Camila Garcia - Marketing"
+                />
+              </picture>
               <div class="empl-card">
                 <h3 class="head">Camila Garcia</h3>
                 <p class="text">Marketing</p>
@@ -248,11 +380,34 @@
               </div>
             </li>
             <li class="empl-box">
-              <img
-                src="./images/img-daniel.jpg"
-                width="264"
-                alt="Daniel Wilson - UI Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-daniel-mobile.jpg,
+                    ./images/img-daniel-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-daniel-tablet.jpg,
+                    ./images/img-daniel-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1157px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-daniel.jpg,
+                    ./images/img-daniel@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <img
+                  src="./images/img-daniel.jpg"
+                  width="264"
+                  alt="Daniel Wilson - UI Designer"
+                />
+              </picture>
               <div class="empl-card">
                 <h3 class="head">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
@@ -298,12 +453,35 @@
           <ul class="portfolio-list">
             <li class="item">
               <div class="app-img">
-                <img
-                  src="./images/banking-app-img.jpg"
-                  alt="Banking mobile app screenshots"
-                  width="360"
-                />
-                <p class="overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/banking-app-img-mobile.jpg,
+                      ./images/banking-app-img-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/banking-app-img-tablet.jpg,
+                      ./images/banking-app-img-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/banking-app-img.jpg,
+                      ./images/banking-app-img@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/banking-app-img.jpg"
+                    alt="Banking mobile app screenshots"
+                    width="360"
+                  />
+                </picture>
+                <p class="overlay text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -316,12 +494,35 @@
             </li>
             <li class="item">
               <div class="app-img">
-                <img
-                  src="./images/cashless-payment-img.jpg"
-                  alt="Paying with qr-code"
-                  width="360"
-                />
-                <p class="overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/cashless-payment-img-mobile.jpg,
+                      ./images/cashless-payment-img-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/cashless-payment-img-tablet.jpg,
+                      ./images/cashless-payment-img-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/cashless-payment-img.jpg,
+                      ./images/cashless-payment-img@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/cashless-payment-img.jpg"
+                    alt="Paying with qr-code"
+                    width="360"
+                  />
+                </picture>
+                <p class="overlay text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -334,12 +535,35 @@
             </li>
             <li class="item">
               <div class="app-img">
-                <img
-                  src="./images/meditation-app-img.jpg"
-                  alt="Laptop amd mobile device running meditation app"
-                  width="360"
-                />
-                <p class="overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/meditation-app-img-mobile.jpg,
+                      ./images/meditation-app-img-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/meditation-app-img-tablet.jpg,
+                      ./images/meditation-app-img-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/meditation-app-img.jpg,
+                      ./images/meditation-app-img@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/meditation-app-img.jpg"
+                    alt="Laptop amd mobile device running meditation app"
+                    width="360"
+                  />
+                </picture>
+                <p class="overlay text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -352,12 +576,36 @@
             </li>
             <li class="item">
               <div class="app-img">
-                <img
-                  src="./images/taxi-service-img.jpg"
-                  alt="Driver using navigation app"
-                  width="360"
-                />
-                <p class="overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/taxi-service-img-mobile.jpg,
+                      ./images/taxi-service-img-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/taxi-service-img-tablet.jpg,
+                      ./images/taxi-service-img-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/taxi-service-img.jpg,
+                      ./images/taxi-service-img@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  taxi-service
+                  <img
+                    src="./images/taxi-service-img.jpg"
+                    alt="Driver using navigation app"
+                    width="360"
+                  />
+                </picture>
+                <p class="overlay text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -370,12 +618,35 @@
             </li>
             <li class="item">
               <div class="app-img">
-                <img
-                  src="./images/screen-illustrarions-img.jpg"
-                  alt="Mobile device with custom wallpapers"
-                  width="360"
-                />
-                <p class="overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/screen-illustrations-img-mobile.jpg,
+                      ./images/screen-illustrations-img-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/screen-illustrations-img-tablet.jpg,
+                      ./images/screen-illustrations-img-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/screen-illustrations-img.jpg,
+                      ./images/screen-illustrations-img@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/screen-illustrations-img.jpg"
+                    alt="Mobile device with custom wallpapers"
+                    width="360"
+                  />
+                </picture>
+                <p class="overlay text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -388,12 +659,35 @@
             </li>
             <li class="item">
               <div class="app-img">
-                <img
-                  src="./images/online-courses-img.jpg"
-                  alt="Smiling woman in headphones using mobile device"
-                  width="360"
-                />
-                <p class="overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/online-courses-img-mobile.jpg,
+                      ./images/online-courses-img-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/online-courses-img-tablet.jpg,
+                      ./images/online-courses-img-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1157px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/online-courses-img.jpg,
+                      ./images/online-courses-img@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/online-courses-img.jpg"
+                    alt="Smiling woman in headphones using mobile device"
+                    width="360"
+                  />
+                </picture>
+                <p class="overlay text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -415,7 +709,7 @@
           <a class="logo" href="./index.html"
             >Web<span class="span-footer">Studio</span></a
           >
-          <p class="text-footer">
+          <p class="text-footer text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
@@ -561,5 +855,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
