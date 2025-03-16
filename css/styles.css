@@ -924,7 +924,6 @@ a:focus {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 16px;
     border-radius: 4px;
     padding: 8px 24px;
     background: #4d5ae5;
@@ -1005,6 +1004,7 @@ a:focus {
     .footer .container {
         align-items: baseline;
         gap: 0;
+        flex-wrap: nowrap;
     }
 
     .footer .list {
