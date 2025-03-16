@@ -2,7 +2,12 @@
     display: none;
 }
 
-/* Base styles */
+
+
+/* ------------------Base styles------------------ */
+
+
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;
@@ -61,7 +66,12 @@ a:focus {
     overflow: hidden;
 }
 
-/* Common */
+
+
+/* ------------------Common------------------ */
+
+
+
 .container {
     max-width: 320px;
     padding: 0 16px;
@@ -101,7 +111,12 @@ a:focus {
     font-weight: 400;
 }
 
-/* Header */
+
+
+/* ------------------Header------------------ */
+
+
+
 .header {
     border-bottom: 1px solid #e7e9fc;
     background: #fff;
@@ -236,7 +251,12 @@ a:focus {
     }
 }
 
-/* Mobile Menu */
+
+
+/* ------------------Mobile Menu------------------ */
+
+
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -360,13 +380,28 @@ a:focus {
     background-color: #404bbf;
 }
 
+@media screen and (max-width: 767px) {
+    .mobile-nav .accent {
+        color: #404bbf;
+    }
+
+    .mobile-adress .accent {
+        color: #4d5ae5;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
 }
 
-/* Solutions */
+
+
+/* ------------------Solutions------------------ */
+
+
+
 .solutions {
     background-color: #2e2f42;
     padding: 72px 0;
@@ -392,6 +427,12 @@ a:focus {
     text-align: center;
     color: #fff;
     max-width: 216px;
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .solutions {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-title-mobile@2x.jpg);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -460,7 +501,12 @@ a:focus {
     background: #404bbf;
 }
 
-/* About Us*/
+
+
+/* ------------------About Us------------------ */
+
+
+
 .about-us {
     padding: 96px 0;
 }
@@ -515,6 +561,12 @@ a:focus {
         padding: 120px 0;
     }
 
+    .about-us-list .head {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
     .about-us-list .item {
         width: calc((100% - 72px) / 4);
     }
@@ -536,10 +588,15 @@ a:focus {
 
 }
 
-/* Team*/
+
+
+/* ------------------Team------------------ */
+
+
+
 .team {
     background-color: #f4f4fd;
-    padding: 96px 28px;
+    padding: 96px 0;
 }
 
 .team .container {
@@ -626,9 +683,6 @@ a:focus {
 }
 
 @media screen and (min-width: 768px) {
-    .team {
-        padding: 96px 108px;
-    }
 
     .empl-box {
         max-width: calc((100% - 24px) / 2);
@@ -654,7 +708,12 @@ a:focus {
     }
 }
 
-/* Portfolio*/
+
+
+/* ------------------Portfolio------------------ */
+
+
+
 .portfolio {
     padding: 96px 0;
 }
@@ -737,13 +796,19 @@ a:focus {
 
 }
 
-/* Footer*/
+
+
+/* ------------------Footer------------------ */
+
+
+
 .footer {
     background-color: #2e2f42;
+    padding: 96px 0;
 }
 
 .footer .container {
-    padding: 96px 16px;
+    padding: 0 16px;
     flex-wrap: wrap;
     row-gap: 72px;
     justify-content: center;
@@ -773,9 +838,7 @@ a:focus {
 }
 
 
-.social {
-    margin: 0 auto;
-}
+
 
 .social .text {
     font-weight: 500;
@@ -891,11 +954,16 @@ a:focus {
     fill: #fff
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .footer .container {
+        width: 584px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .footer .container {
         column-gap: 24px;
         justify-content: flex-start;
-        padding: 96px 108px;
     }
 
     .text-footer {
@@ -927,10 +995,6 @@ a:focus {
     }
 
 
-    .social {
-        margin-left: 0;
-    }
-
     .subscribe-container {
         flex-direction: column;
         align-items: baseline;
@@ -939,7 +1003,6 @@ a:focus {
 
 @media screen and (min-width: 1158px) {
     .footer .container {
-        padding: 96px 15px;
         align-items: baseline;
         gap: 0;
     }
@@ -954,10 +1017,18 @@ a:focus {
         padding: 100px 0
     }
 
+    .social {
+        margin-right: 80px;
+    }
 
 }
 
-/* Backdrop*/
+
+
+/* ------------------Backdrop------------------ */
+
+
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -1192,9 +1263,7 @@ input:checked+label>.checkbox-span {
     margin: 0 auto;
 }
 
-.subscribe-container {
-    margin-left: auto;
-}
+
 
 @media screen and (min-width: 768px) {
     .modal {
